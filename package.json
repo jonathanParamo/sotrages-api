@@ -1,0 +1,28 @@
+{
+  "name": "serverAndres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Carlos Valencia Henao <rasfreed@gmail.com> (https://www.linkedin.com/in/carlosvalenciahenao)",
+  "engines": {
+    "node": "14.17.5",
+    "yarn": "1.22.5",
+    "npm": "6.14.14"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
