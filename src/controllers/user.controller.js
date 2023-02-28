@@ -22,7 +22,7 @@ module.exports = {
           userId: user._id,
         },
         process.env.SECRET || 'mySecretKey',
-        { expiresIn: '365d' }
+        { expiresIn: '7d' }
       )
 
       res.status(201).json({ user, storage, token })
@@ -67,7 +67,7 @@ module.exports = {
           userId: user._id,
         },
         process.env.SECRET || 'mySecretKey',
-        { expiresIn: '365d' }
+        { expiresIn: '7d' }
       )
 
       res.status(201).json({ user, token })

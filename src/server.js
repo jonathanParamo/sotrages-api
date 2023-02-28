@@ -6,6 +6,7 @@ const express = require('express')
 const usuarioRouter = require('./routes/usuario')
 const storageRouter = require('./routes/storages')
 const productsRouter = require('./routes/products')
+const recoveryRouter = require('./routes/recovery')
 
 const port = process.env.PORT || 8000
 const app = express()
@@ -26,6 +27,7 @@ app.get('/', (req,res) => {
 app.use('/users', usuarioRouter)
 app.use('/storages', storageRouter)
 app.use('/products', productsRouter)
+app.use('/recovery-password', recoveryRouter)
 
 app.listen(port, () => {
   console.log(`App running at http://localhost:${port}`)
