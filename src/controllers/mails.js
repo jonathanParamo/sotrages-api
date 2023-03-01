@@ -6,8 +6,8 @@ const sendMail = async ( recoveryEmail, token ) => {
 
     port: 507,
     auth: {
-      user: REACT_APP_API_USER,
-      pass: REACT_APP_API_KEY,
+      user: process.env.REACT_APP_API_USER,
+      pass: process.env.REACT_APP_API_KEY,
     }
   }
 
