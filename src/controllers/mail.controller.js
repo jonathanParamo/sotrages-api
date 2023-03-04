@@ -5,7 +5,7 @@ const { sendMail } = require('../mails/mails')
 module.exports = {
   async recoveryPassword (rep,res) {
     try {
-      const { body: { email } } = req
+      const { body: { email } } = rep
       const user = await User.findOne({ email })
 
       if(user) {
