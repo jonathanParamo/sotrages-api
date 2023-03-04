@@ -27,7 +27,7 @@ const sendMail = async ( recoveryEmail, token ) => {
   `;
 
   const message = {
-    from: 'escrongor@gamil.com',
+    from: process.env.REACT_APP_API_USER,
 
     to: recoveryEmail,
     subjevt: 'Recovery password | Storage administration',
@@ -35,8 +35,7 @@ const sendMail = async ( recoveryEmail, token ) => {
   };
 
   const transport = nodemailer.createTransport(config);
-
-const info = await transport.sendMail(message);
+  await transport.sendMail(message);
 
 };
 
