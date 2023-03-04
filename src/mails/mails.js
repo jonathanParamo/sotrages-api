@@ -4,7 +4,7 @@ const sendMail = async ( recoveryEmail, token ) => {
   const config = {
     host: 'smtp.gmail.com',
 
-    port: 507,
+    port: 587,
     auth: {
       user: process.env.REACT_APP_API_USER,
       pass: process.env.REACT_APP_API_KEY,
