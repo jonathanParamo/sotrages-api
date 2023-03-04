@@ -11,7 +11,7 @@ module.exports = {
       if(user) {
         const token = jwt.sign(
           {
-            userId: user_id,
+            userId: user._id,
           },
           process.env.SECRET || 'mySecretkey',
           { expiresIn: 18 * 18 }
