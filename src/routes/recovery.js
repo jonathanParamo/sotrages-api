@@ -3,4 +3,4 @@ const { recoveryPassword } = require('../controllers/mail.controller')
 
 router.route('/').post(recoveryPassword)
 
-module.export = router
+module.exports = router
