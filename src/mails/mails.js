@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 const sendMail = async ( recoveryEmail, token ) => {
   const config = {
-    host: 'smtp-mail.gmail.com',
+    host: 'smtp.gmail.com',
 
     port: 507,
     auth: {
