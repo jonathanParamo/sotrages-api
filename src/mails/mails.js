@@ -21,7 +21,7 @@ const sendMail = async ( recoveryEmail, token ) => {
       </p>
 
       <p>
-        Click <a href="http://localhost:3000/recovery-password?token=${token}' target="_blank">here</a>
+        Click <a href="http://localhost:3000/reset-password?token=${token}' target="_blank">here</a>
       </p>
     </div>
   `;
