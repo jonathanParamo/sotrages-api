@@ -7,7 +7,7 @@ const usuarioRouter = require('./routes/usuario')
 const storageRouter = require('./routes/storages')
 const productsRouter = require('./routes/products')
 const recoveryRouter = require('./routes/recovery')
-const resetPasswordRouter = require('./routes/resert-password')
+const resetPasswordRouter = require('./routes/resetPassword')
 
 const port = process.env.PORT || 8000
 const app = express()
